@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "Enter employee name : "
-read $name
+read name
 echo "Enter the project name : "
-read $project
-date=$(date)
+read project
+date=$(date "+%d-%b-%Y %H:%M")
 
 echo "------------------------------------------"
 echo "Employee Report"
