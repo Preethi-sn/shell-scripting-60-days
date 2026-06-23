@@ -1,0 +1,28 @@
+for i in {1..99}; do
+        if(( $i%2 != 0 )); then
+    echo $i
+   fi
+done
+
+------------------------------------------------------------------------------------------
+read X
+read Y
+if [ $X -lt $Y ]; then
+    echo "X is less than Y"
+elif [ $X == $Y ]; then
+    echo "X is equal to Y"
+else
+    echo "X is greater than Y"
+fi
+------------------------------------------------------------------------------------------
+read X
+read Y
+read Z
+
+if [ $X == $Y && $Y == $Z ]; then
+    echo "EQUILATERAL"
+elif [ $X -eq $Y | $X -eq $Z | $Y -eq $Z ]; then 
+    echo "ISOSCELES"
+else
+    echo "SCALENE"
+fi
